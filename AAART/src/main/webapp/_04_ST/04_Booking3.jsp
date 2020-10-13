@@ -127,11 +127,11 @@
  <script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </script>
-</script>
+
     <script>
 
     $("#1").click(function () {
-    	if (confirm("確認刪除? ")) {
+    	if (confirm("是否送出訂單? ")) {
     		window.location ="<c:url value='/_04_ShopCart/DelectCart'/>" 
     	} else {
     		return false;

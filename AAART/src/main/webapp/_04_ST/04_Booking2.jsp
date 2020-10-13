@@ -39,7 +39,7 @@
 </head>
 
 <body>
-<%-- <form name="order2" action="<c:url value='/_04_ST/04_Booking3.jsp'/> " method="get"> --%>
+<form name="order2" action="<c:url value='/_04_ST/04_Booking3.jsp'/> " method="get">
 
 <jsp:include page="/_04_ST/04_topbar.jsp" />
 <c:set var="name" value="${param.name}" scope="session"/> 
@@ -85,7 +85,7 @@
             <td>數量</td>
             <td >價格</td>
             <td class="price2">總價</td>
-            <td>操作</td>
+<!--             <td>操作</td> -->
         </tr>
         <%--使用JSTL 執行for loop ${show.no}取map內value --%>
      <%--    <c:set var="sum" value="${0}"/>  --%>
@@ -105,13 +105,9 @@
             <td>NT$<input type="text" name="total1" id="total1" class="total1"value="${show.total1}" readonly="readonly" /></td>
 
 
-            <td >
-            <input type="button" value="修改" name="submit" class="submit" id="submit"  >
-    	 <form name="order" action="<c:url value='/_04_ShopCart/Delect'/>" method="POST">
-         <input type="submit" value="刪除測試" name="clear" class="clear" id="clear"> 
-    	 </form>
-    	 
-            <input type="button" value="刪除" name="submit" class="submit" id="submit"  ></td>
+<!--             <td > -->
+<!--             <input type="button" value="修改" name="submit" class="submit" id="submit"  > -->
+<!--             <input type="button" value="刪除" name="submit" class="submit" id="submit"  ></td> -->
          </tr>
       
          <tr>
@@ -125,11 +121,11 @@
             
             <td name="price" class="price" id="price" >NT$500</td>
             <td>NT$<input type="text" name="total2" id="total2" class="total2"value="${show.total2}" readonly="readonly" /></td>
-            <td >
-            <input type="button" value="修改" name="submit" class="submit" id="submit"  >
-            <input type="button" value="刪除" name="submit" class="submit" id="submit" onclick="<c:url value='/_04_ShopCart/DelectCart'/>"></td>
+<!--             <td > -->
+<!--             <input type="button" value="修改" name="submit" class="submit" id="submit"  > -->
+<%--             <input type="button" value="刪除" name="submit" class="submit" id="submit" onclick="<c:url value='/_04_ShopCart/DelectCart'/>"></td> --%>
         </tr>
-			</form> 
+			
 <!-- 		設定totalprice加總 -->
 <%-- 		<c:set var="sum" value="${sum + show.totalprice}" scope="session" /> --%>
 		<c:set var="sum" value="${sum + show.totalprice}"  />
@@ -142,13 +138,13 @@
    		<form name="order" action="<c:url value='/_04_ShopCart/ClearCart'/>" method="POST">
           <input type="submit" value="全部清除" name="clear" class="clear" id="clear"> 
     	 </form>
-   		<form name="order" action="<c:url value='/_04_ShopCart/Delect'/>" method="POST">
-          <input type="submit" value="刪除測試" name="clear" class="clear" id="clear"> 
-    	 </form>
+<%--    		<form name="order" action="<c:url value='/_04_ShopCart/Delect'/>" method="POST"> --%>
+<!--           <input type="submit" value="刪除測試" name="clear" class="clear" id="clear">  -->
+<!--     	 </form> -->
             
-            <form name="order" action="<c:url value='/_04_ShopCart/Delect'/>" method="POST">
-          <input type="submit" value="刪除測試" name="clear" class="clear" id="clear"> 
-    	 </form>
+<%--             <form name="order" action="<c:url value='/_04_ShopCart/Delect'/>" method="POST"> --%>
+<!--           <input type="submit" value="刪除測試" name="clear" class="clear" id="clear">  -->
+<!--     	 </form> -->
 
     
 

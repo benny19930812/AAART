@@ -54,7 +54,6 @@
             <td>數量</td>
             <td>價格</td>
             <td class="price2">總價</td>
-            <td>操作</td>
         </tr>
        
         <%--使用JSTL 執行for loop ${show.no}取map內value --%>
@@ -72,7 +71,6 @@
             </td>
            <td name="price" class="price" id="price" >NT$1000</td>
             <td>NT$<input type="text" name="total1" id="total1" class="total1"value="${show.total1}" readonly="readonly" /></td>
-            <td ><input type="button" value="刪除" name="submit" class="submit" id="submit"></td>
          </tr>
          <tr>
             <td>${show.title}</td>
@@ -86,7 +84,6 @@
             
             <td name="price" class="price" id="price" >NT$500</td>
             <td>NT$<input type="text" name="total2" id="total2" class="total2"value="${show.total2}" readonly="readonly" /></td>
-            <td ><input type="button" value="刪除" name="submit" class="submit" id="submit"></td>
 
         </tr>
 			</form>
